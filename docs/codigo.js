@@ -68,12 +68,12 @@ const validarCampos = ()=>{
 	let error = [];
 	if(nombre.value.length < 3){
 		error[0] = true;
-		error[1] = "El nombre nombre puede contener menos de 3 caracteres. Ingrese un nombre válido";
+		error[1] = "El nombre no puede contener menos de 3 caracteres. Ingrese un nombre válido";
 		return error;
 	}
 	else if (nombre.value.length > 40) {
 		error[0] = true;
-		error[1] = "El nombre nombre puede contener más de 40 caracteres. Ingrese un nombre válido";
+		error[1] = "El nombre no puede contener más de 40 caracteres. Ingrese un nombre válido";
 		return error;
 	}
 	else if(email.value.length < 5 ||
