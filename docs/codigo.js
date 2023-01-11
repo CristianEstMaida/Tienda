@@ -29,7 +29,7 @@ input.addEventListener("keypress",(e)=>{
 });
 
 boton.addEventListener("click",(e)=>{
-	e.preventDefault();
+	//e.preventDefault();
 	let error = validarCampos();
 	if(error[0]){
 		resultado.innerHTML = error[1];
